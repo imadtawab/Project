@@ -476,6 +476,7 @@ media,
     text-align:center;
     display:flex;
     flex-direction:column;
+    overflow: auto;
   }
   .zaz{
     width:fit-content;
