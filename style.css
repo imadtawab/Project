@@ -477,6 +477,7 @@ media,
     display:flex;
     flex-direction:column;
     overflow: auto;
+    padding-bottom: 50px;
   }
   .zaz{
     width:fit-content;
