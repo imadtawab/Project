@@ -75,6 +75,13 @@ myadd.addEventListener("click", (eo) => {
   i++;
   defaultBtn.value = "";
 });
+setInterval(() => {
+  if (myytitle.value == "" || mypar.value == "") {
+    myadd.setAttribute("disabled" , "")
+  } else {
+    myadd.removeAttribute("disabled")
+  }
+}, 1000);
 // img
 const defaultBtn = document.querySelector("#file");
 function defaultBtnActive() {
@@ -103,8 +110,3 @@ adea.addEventListener("click", (eo) => {
   }
 });
 
-if (myytitle.value == "" || mypar.value == "") {
-  myadd.setAttribute("disabled" , "")
-} else {
-  myadd.removeAttribute("disabled")
-}
